@@ -17,15 +17,10 @@ Mbid est une identifiant unique pour les musiciens. Il se compose d'une série d
 Cette identifiant se trouve sur le site de [MusicBrainz Identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier).
 
 Effectuer une recherche de l'artiste désirer :
-<br>
-![enter image description here](https://i.imgur.com/LPcVCk3.png)
+> ![enter image description here](https://i.imgur.com/LPcVCk3.png)
 
-<br><br>
 Trouver l'artiste dans la recherche et cliquez dessus :
-<br>
-![enter image description here](https://i.imgur.com/HAgUt8M.png)
+> ![enter image description here](https://i.imgur.com/HAgUt8M.png)
 
-<br><br>
 Rendez-vous dans l'onglet détails pour trouver le mbid :
-<br>
-![enter image description here](https://i.imgur.com/HTM7NaG.png)
+> ![enter image description here](https://i.imgur.com/HTM7NaG.png)
