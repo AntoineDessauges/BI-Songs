@@ -25,7 +25,7 @@
         return $setlists;
     }
 
-    $mbid = $argv[1]; //a4fb1386-45e7-4c85-a8a5-396060f6ec66     -      b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d
+    $mbid = $argv[1]; //mdbid of the musician, more informations in readme
 
     $setlists = get_setlists_from_curl($mbid);
 
