@@ -16,13 +16,13 @@ Où `<mbid>` est l'identifiant unique de l'artiste sur lequel vous souhaiter fai
 Mbid est une identifiant unique pour les musiciens. Il se compose d'une série de lettre et espace déparer par des tirets (Exemple :  cc197bad-dc9c-440d-a5b5-d52ba2e14234). 
 Cette identifiant se trouve sur le site de [MusicBrainz Identifier](https://musicbrainz.org/doc/MusicBrainz_Identifier).
 
-Effectuer une recherche de l'artiste désirer :
+Effectuer une recherche de l'artiste désirer :<br>
 ![enter image description here](https://i.imgur.com/LPcVCk3.png)
 
 <br><br>
-Trouver l'artiste dans la recherche et cliquez dessus :
+Trouver l'artiste dans la recherche et cliquez dessus :<br>
 ![enter image description here](https://i.imgur.com/HAgUt8M.png)
 
 <br><br>
-Rendez-vous dans l'onglet détails pour trouver le mbid :
+Rendez-vous dans l'onglet détails pour trouver le mbid :<br>
 ![enter image description here](https://i.imgur.com/HTM7NaG.png)
