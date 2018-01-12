@@ -10,7 +10,8 @@
         curl_setopt($curl, CURLOPT_HTTPHEADER, [
             "x-api-key: 1bbb2dcb-32e1-44b8-8519-d8350129b67b",
             "accept: application/json",
-            "Accept-Language: fr"
+            "Accept-Language: fr",
+            'Content-type: text/csv; charset=UTF-8',
           ]
         );
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
@@ -34,14 +35,14 @@
 
     //delete files if exist
     if(file_exists('../../data/processed/setlists.csv'))
-        unlink('setlists.csv');
+        unlink('../../data/processed/setlists.csv');
     if(file_exists('../../data/processed/songs.csv'))
-        unlink('songs.csv');
+        unlink('../../data/processed/songs.csv');
 
     //open files
-    $setlists_file = fopen("../../data/processed/setlists.csv", "w") or die("Unable to open file!");
-    fwrite($setlists_file, 'id;artist;date;city;country;tour'."\r\n"); //write column
-    $songs_file = fopen("../../data/processed/songs.csv", "w") or die("Unable to open file!");
+    $setlists_file = fopen("../../data/processed/setlists.csv", "w") or die("Fichier ouvert !");
+    fwrite($setlists_file, 'id;artist;year;city;country;tour'."\r\n"); //write column
+    $songs_file = fopen("../../data/processed/songs.csv", "w") or die("Fichier ouvert !");
     fwrite($songs_file, 'id;name'."\r\n"); //write column
 
     //parse all page from api
@@ -55,7 +56,7 @@
         foreach ($setlists->setlist as $setlist) {
                   
             // write in file
-            fwrite($setlists_file, $setlist->id.';'.$setlist->artist->name.';'.$setlist->eventDate.';'.$setlist->venue->city->name.';'.$setlist->venue->city->name.';'.(isset($setlist->tour->name) ? $setlist->tour->name : '')."\r\n");
+            fwrite($setlists_file, $setlist->id.';'.$setlist->artist->name.';'.substr($setlist->eventDate,-4).';'.$setlist->venue->city->name.';'.$setlist->venue->city->country->name.';'.(isset($setlist->tour->name) ? $setlist->tour->name : '')."\r\n");
 
             //parse all sets in this setlist
             foreach ($setlist->sets as $set) {
