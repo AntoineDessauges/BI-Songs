@@ -19,8 +19,10 @@ Cette identifiant se trouve sur le site de [MusicBrainz Identifier](https://musi
 Effectuer une recherche de l'artiste désirer :
 ![enter image description here](https://i.imgur.com/LPcVCk3.png)
 
+<br><br>
 Trouver l'artiste dans la recherche et cliquez dessus :
 ![enter image description here](https://i.imgur.com/HAgUt8M.png)
 
+<br><br>
 Rendez-vous dans l'onglet détails pour trouver le mbid :
 ![enter image description here](https://i.imgur.com/HTM7NaG.png)
