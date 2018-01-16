@@ -11,6 +11,8 @@ Une fois installé, lancé un invité de commande dans ce dossier.
 Pour exécuter le script utiliser la commande suivante : `php create_csv.php <mbid>`
 Où `<mbid>` est l'identifiant unique de l'artiste sur lequel vous souhaiter faire l'analyse (voir partie `MusicBrainz Identifier (Mbid)` pour plus d'informations).
 
+Une fois la commande executé, les fichiers .csv traités sont placés dans `/data/processed`
+
 ### MusicBrainz Identifier (Mbid)
 
 Mbid est une identifiant unique pour les musiciens. Il se compose d'une série de lettre et espace déparer par des tirets (Exemple :  cc197bad-dc9c-440d-a5b5-d52ba2e14234). 
