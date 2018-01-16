@@ -41,8 +41,10 @@
 
     //open files
     $setlists_file = fopen("../../data/processed/setlists.csv", "w") or die("Fichier ouvert !");
+    fwrite($setlists_file, "\xEF\xBB\xBF"); //set encodage for excel
     fwrite($setlists_file, 'id;artist;year;city;country;tour'."\r\n"); //write column
     $songs_file = fopen("../../data/processed/songs.csv", "w") or die("Fichier ouvert !");
+    fwrite($songs_file, "\xEF\xBB\xBF");//set encodage for excel
     fwrite($songs_file, 'id;name'."\r\n"); //write column
 
     //parse all page from api
