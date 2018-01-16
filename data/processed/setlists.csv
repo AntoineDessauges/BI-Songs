@@ -1,4 +1,4 @@
-id;artist;year;city;country;tour
+﻿id;artist;year;city;country;tour
 33e0845d;Coldplay;2017;La Plata;Argentine;A Head Full of Dreams
 63e08ec7;Coldplay;2017;La Plata;Argentine;A Head Full of Dreams
 1be0a56c;Coldplay;2017;Porto Alegre;Brésil;A Head Full of Dreams
@@ -145,8 +145,8 @@ bf045c2;Coldplay;2016;Lima;Pérou;A Head Full of Dreams
 2bf2c422;Coldplay;2015;Universal City;Etats-Unis;
 53f2cbad;Coldplay;2015;Londres;Royaume-Uni;
 3f2d1bf;Coldplay;2015;Milan;Italie;
-73f2dadd;Coldplay;2015;Lutece;France;
 43f2dfe7;Coldplay;2015;Lutece;France;
+73f2dadd;Coldplay;2015;Lutece;France;
 4bf2eb92;Coldplay;2015;Offenbach;Allemagne;
 73f2e281;Coldplay;2015;Londres;Royaume-Uni;
 23f2fc37;Coldplay;2015;Londres;Royaume-Uni;
@@ -1084,8 +1084,8 @@ bd6517a;Coldplay;2000;Leicester;Royaume-Uni;Parachutes
 6bd106e2;Coldplay;2000;Pilton;Royaume-Uni;Parachutes
 33d31461;Coldplay;2000;Hasselt;Belgique;Parachutes
 7bd65e40;Coldplay;2000;Biddinghuizen;Pays-Bas;Parachutes
-1bf2c5c0;Coldplay;2000;Chelmsford;Royaume-Uni;Parachutes
 73d65e41;Coldplay;2000;Stafford;Royaume-Uni;Parachutes
+1bf2c5c0;Coldplay;2000;Chelmsford;Royaume-Uni;Parachutes
 63d65e43;Coldplay;2000;Chelmsford;Royaume-Uni;Parachutes
 23d6886b;Coldplay;2000;Weeze;Allemagne;Parachutes
 73d65e4d;Coldplay;2000;Paredes de Coura;Portugal;Parachutes
