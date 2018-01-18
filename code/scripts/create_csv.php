@@ -1,5 +1,8 @@
 <?php
 
+    $most_played_per_year = [];
+    $most_played_per_country = [];
+
     echo 'Please wait until the end'; //informal message
 
     //get setlists from api 
@@ -73,12 +76,42 @@
                 if(isset($set[0]->song)){
                     foreach ($set[0]->song as $song) {
                         fwrite($songs_file, $setlist->id.';'.$song->name."\r\n");
+
+                        //generate array for most played song per year
+                        if (!array_key_exists(substr($setlist->eventDate,-4), $most_played_per_year))
+                            $most_played_per_year[substr($setlist->eventDate,-4)] = [];
+                        if (!array_key_exists($song->name, $most_played_per_year[substr($setlist->eventDate,-4)]))
+                            $most_played_per_year[substr($setlist->eventDate,-4)][$song->name] = 0;
+                        $most_played_per_year[substr($setlist->eventDate,-4)][$song->name]++;
+
+                        //generate array for most played song per country
+                        if (!array_key_exists($setlist->venue->city->country->name, $most_played_per_year))
+                            $most_played_per_year[$setlist->venue->city->country->name] = [];
+                        if (!array_key_exists($song->name, $most_played_per_year[$setlist->venue->city->country->name]))
+                            $most_played_per_year[$setlist->venue->city->country->name][$song->name] = 0;
+                        $most_played_per_year[$setlist->venue->city->country->name][$song->name]++;
+
                     }
                 }
                 //parse all "encore" songs in this set
                 if(isset($set[1]->song)){
                     foreach ($set[1]->song as $song) {
                         fwrite($songs_file, $setlist->id.';'.$song->name."\r\n");
+
+                        //generate array for most played song per year
+                        if (!array_key_exists(substr($setlist->eventDate,-4), $most_played_per_year))
+                            $most_played_per_year[substr($setlist->eventDate,-4)] = [];
+                        if (!array_key_exists($song->name, $most_played_per_year[substr($setlist->eventDate,-4)]))
+                            $most_played_per_year[substr($setlist->eventDate,-4)][$song->name] = 0;
+                        $most_played_per_year[substr($setlist->eventDate,-4)][$song->name]++;
+
+                        //generate array for most played song per country
+                        if (!array_key_exists($setlist->venue->city->country->name, $most_played_per_country))
+                            $most_played_per_country[$setlist->venue->city->country->name] = [];
+                        if (!array_key_exists($song->name, $most_played_per_country[$setlist->venue->city->country->name]))
+                            $most_played_per_country[$setlist->venue->city->country->name][$song->name] = 0;
+                        $most_played_per_country[$setlist->venue->city->country->name][$song->name]++;
+
                     }
                 }
             }
@@ -86,8 +119,57 @@
         }//foreach
 
     }//for
-  
+
+    // create most played songs per year file
+    $most_played_per_year_file = fopen("../../data/processed/most_played_per_year.csv", "w") or die("Fichier ouvert !");
+    fwrite($most_played_per_year_file, "\xEF\xBB\xBF"); //set encodage for excel
+    fwrite($most_played_per_year_file, 'year;name;count'."\r\n"); //write column
+
+    //foreach most played songs per year array to create csv
+    foreach ($most_played_per_year as $year => $songs) {
+        
+        $most_played_this_year = '';
+        $most_played_this_year_count = 0;
+
+        //determine the most played this year
+        foreach ($songs as $song => $count_play) {
+            if($count_play > $most_played_this_year_count){
+                $most_played_this_year = $song;
+                $most_played_this_year_count = $count_play;
+            }
+        }
+
+        fwrite($most_played_per_year_file, $year.';'.$most_played_this_year.';'.$most_played_this_year_count."\r\n");
+    }
+
+
+    // create most played songs per country file
+    $most_played_per_country_file = fopen("../../data/processed/most_played_per_country.csv", "w") or die("Fichier ouvert !");
+    fwrite($most_played_per_country_file, "\xEF\xBB\xBF"); //set encodage for excel
+    fwrite($most_played_per_country_file, 'country;name;count'."\r\n"); //write column
+
+    //foreach most played songs per country array to create csv
+    foreach ($most_played_per_country as $country => $songs) {
+        
+        $most_played_this_country = '';
+        $most_played_this_country_count = 0;
+
+        //determine the most played this year
+        foreach ($songs as $song => $count_play) {
+            if($count_play > $most_played_this_country_count){
+                $most_played_this_country = $song;
+                $most_played_this_country_count = $count_play;
+            }
+        }
+
+        fwrite($most_played_per_country_file, $country.';'.$most_played_this_country.';'.$most_played_this_country_count."\r\n");
+    }
+
+
     //close all files
     fclose($setlists_file);
+    fclose($songs_file);
+    fclose($most_played_per_year_file);
+    fclose($most_played_per_country_file);
 
 ?>
