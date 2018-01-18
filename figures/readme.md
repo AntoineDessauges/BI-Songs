@@ -1,6 +1,6 @@
 # Graphiques
 
-Le fichier Power BI contient quatres graphiques séparer en quatres onglets. Des filtres sont appliqués sur chaque graphique afin de les rendre plus visible.
+Le fichier Power BI contient quatre graphiques séparer en quatre onglets. Des filtres sont appliqués sur chaque graphique afin de les rendre plus visible.
 
 ## Configuration du fichier Power BI
 
