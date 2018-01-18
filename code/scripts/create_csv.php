@@ -29,6 +29,12 @@
 
     $setlists = get_setlists_from_curl($mbid);
 
+    //if not api return ->  api down or mbid incorect
+    if(is_null($setlists)){
+        echo "\nErruer : Mbid incorecte ou API ne fonctionne pas !";
+        return;
+    }
+
     //get number of page (round to upper)
     $number_page = ceil ($setlists->total / $setlists->itemsPerPage);
 
