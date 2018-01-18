@@ -85,11 +85,11 @@
                         $most_played_per_year[substr($setlist->eventDate,-4)][$song->name]++;
 
                         //generate array for most played song per country
-                        if (!array_key_exists($setlist->venue->city->country->name, $most_played_per_year))
-                            $most_played_per_year[$setlist->venue->city->country->name] = [];
-                        if (!array_key_exists($song->name, $most_played_per_year[$setlist->venue->city->country->name]))
-                            $most_played_per_year[$setlist->venue->city->country->name][$song->name] = 0;
-                        $most_played_per_year[$setlist->venue->city->country->name][$song->name]++;
+                        if (!array_key_exists($setlist->venue->city->country->name, $most_played_per_country))
+                            $most_played_per_country[$setlist->venue->city->country->name] = [];
+                        if (!array_key_exists($song->name, $most_played_per_country[$setlist->venue->city->country->name]))
+                            $most_played_per_country[$setlist->venue->city->country->name][$song->name] = 0;
+                        $most_played_per_country[$setlist->venue->city->country->name][$song->name]++;
 
                     }
                 }
