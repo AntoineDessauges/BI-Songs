@@ -1,3 +1,3 @@
-# Graphiques finale
+# Graphiques finales
 
-Ce dossier contient les graphiques séléctionés pour être utilisé dans le rapport final. Ils ont été choisi parmis ceux générere ans les graphiques exploratoires.
+Ce dossier contient les graphiques sélectionnés pour être utilisé dans le rapport final. Ils ont été choisi parmi ceux générerez dans les graphiques exploratoires.

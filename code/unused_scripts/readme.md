@@ -1,3 +1,3 @@
-# Scipts inutilisés
+# Scripts inutilisés
 
-Il n'existe pas de script inutilisés.
+Il n'existe pas de script inutilisé.

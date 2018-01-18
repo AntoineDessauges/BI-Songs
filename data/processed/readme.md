@@ -1,4 +1,4 @@
-# Données traités
+# Données traitées
 
 Il existe deux fichiers de donnés traités :
 
@@ -7,11 +7,11 @@ Il existe deux fichiers de donnés traités :
  - most_played_per_country.csv
  - most_played_per_year.csv
  
-Ces fichiers sont générer via l'[API](https://api.setlist.fm/docs/1.0/index.html) de [setlist.fm](https://www.setlist.fm/).
+Ces fichiers sont générés via l'[API](https://api.setlist.fm/docs/1.0/index.html) de [setlist.fm](https://www.setlist.fm/).
 
 
 ----------
-## Strucutre des fichiers
+## Structure des fichiers
 
 ### setlists.csv
 
@@ -34,7 +34,7 @@ Contient les setlists ainsi que leurs informations.
 |  name|
 
 
-Contient le nom des chansons lié par une relation avec la colonne id.
+Contient le nom des chansons liés par une relation avec la colonne id à une setlist.
 
 ### most_played_per_country.csv
 
@@ -45,7 +45,7 @@ Contient le nom des chansons lié par une relation avec la colonne id.
 |  count|
 
 
-Contient la chanson la plus joué dans un pays et le nombre de fois qu'elle a été joué dans ce pays.
+Contient la chanson la plus jouée dans un pays et le nombre de fois qu'elle a été joué dans ce pays.
 
 ### most_played_per_year.csv
 
@@ -56,4 +56,4 @@ Contient la chanson la plus joué dans un pays et le nombre de fois qu'elle a é
 |  count|
 
 
-Contient la chanson la plus joué chaque année et le nombre de fois qu'elle a été joué dans cette année.
+Contient la chanson la plus jouée chaque année et le nombre de fois qu'elle a été joué dans cette année.
