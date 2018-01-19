@@ -29,23 +29,23 @@ Une fois obtenu, j'ai créer mon script de traitement de données. Ce script est
 Afin d’analyser les résultats trois graphiques ont été générer pour deux artiste différent. 
 
 ### Chansons la plus joués par un artiste
-| Coldplay  |Iron maiden   |
+| Coldplay  | ![enter image description here](https://i.imgur.com/PvBPiwf.png) |
 |---|---|
-|![enter image description here](https://i.imgur.com/PvBPiwf.png)   | ![enter image description here](https://i.imgur.com/inptzQv.png)  |
+| Iron maiden   | ![enter image description here](https://i.imgur.com/inptzQv.png)  |
 
 Ces graphiques permettent de répondre à la question principal `Quelles sont les chansons les plus jouées par un groupe ?`. 
 
 ### Chansons la plus joués par pays pour un artiste
-| Coldplay  |Iron maiden   |
+| Coldplay  |  ![enter image description here](https://i.imgur.com/0FTRnAy.png) |
 |---|---|
-|![enter image description here](https://i.imgur.com/0FTRnAy.png)   | ![enter image description here](https://i.imgur.com/PcRTkp5.png)  |
+|Iron maiden   | ![enter image description here](https://i.imgur.com/PcRTkp5.png)  |
 
 Ces graphiques permettent de démontrer que dans la majeure partie des cas, la chanson reste identique quelque sois le pays. Ce résultat s'explique simplement par le faite que la chanson la plus joués et celle qui se retrouve dans la majeure partie des pays.
 
 ### Chansons la plus joués par année pour un artiste
-| Coldplay  |Iron maiden   |
+| Coldplay  |  ![enter image description here](https://i.imgur.com/zpfr3IW.png) |
 |---|---|
-|![enter image description here](https://i.imgur.com/zpfr3IW.png)   | ![enter image description here](https://i.imgur.com/0zswKUm.png)  |
+|  Iron maiden | ![enter image description here](https://i.imgur.com/0zswKUm.png)  |
 
 Ce graphique démontre que au fil des années le choix des chansons est influencer par la tendance. Que la sortie d'album ou ancienneté des chansons impacte les chansons choisies pour un concert.
 
