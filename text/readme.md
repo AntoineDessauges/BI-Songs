@@ -20,7 +20,7 @@ Je me suis finalement tourné vers l'[API](https://api.setlist.fm/docs/1.0/index
  - Elle me permettait d'obtenir mes résultats sur une seule requête
  - Elle contenait les chansons joués lors des concerts ce qui était obligatoire pour mon analyse
 ### Traitement
-Afin de traité mes données j'ai dû m'inscrire sur Setlist.fm](https://www.setlist.fm/) afin d'obtenir une clé d'API qui sera utilisé pour mes requetes.
+Afin de traité mes données j'ai dû m'inscrire sur [Setlist.fm](https://www.setlist.fm/) afin d'obtenir une clé d'API qui sera utilisé pour mes requetes.
 
 Une fois obtenu, j'ai créer mon script de traitement de données. Ce script est réaliser en PHP qui effectue une requête sur [API](https://api.setlist.fm/docs/1.0/index.html) de [Setlist.fm](https://www.setlist.fm/) et génère les fichiers .csv grâce au résultats obtenus.
 
