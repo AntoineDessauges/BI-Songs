@@ -9,6 +9,7 @@ Il existe deux fichiers de donnés traités :
  
 Ces fichiers sont générés via l'[API](https://api.setlist.fm/docs/1.0/index.html) de [setlist.fm](https://www.setlist.fm/).
 
+Pour  générer  ces fichiers suivez la marche à suivre situé [ici](../../code/scripts).
 
 ----------
 ## Structure des fichiers
