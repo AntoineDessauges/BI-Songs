@@ -3,8 +3,6 @@
     $most_played_per_year = [];
     $most_played_per_country = [];
 
-    echo 'Please wait until the end'; //informal message
-
     //get setlists from api 
     function get_setlists_from_curl($mbid, $page = 1){
 
@@ -28,15 +26,24 @@
         return $setlists;
     }
 
+
+    //if not mbid enter by user
+    if(empty($argv[1])){
+        echo "\nErreur : Mbid obligatoire !";
+        return;
+    }
+
     $mbid = $argv[1]; //mdbid of the musician, more informations in readme
 
     $setlists = get_setlists_from_curl($mbid);
 
     //if not api return ->  api down or mbid incorect
     if(is_null($setlists)){
-        echo "\nErruer : Mbid incorecte ou API ne fonctionne pas !";
+        echo "\nErreur : Mbid incorecte ou API ne fonctionne pas !";
         return;
     }
+
+    echo 'Please wait until the end'; //informal message
 
     //get number of page (round to upper)
     $number_page = ceil ($setlists->total / $setlists->itemsPerPage);
