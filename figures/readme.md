@@ -15,6 +15,6 @@ Pour mettre à jour les données des graphiques, il faut effectuer un clic droit
 ### Filtres
 Pour les graphiques de `Chanson par pays` et de `Chanson par année` des filtres sont appliqués pour afficher les graphiques. Ces filtres dépendront du nombre de chansons de l'artiste et de son nombre de concerts (ils dépendent donc de l'artiste choisi lors de la génération des fichiers .csv).
 
-Il sera peut-être nécessaire de changer  les valeurs des filtres ou le supprimer pour afficher un graphique lisible (ni trop de chansons ni pas assez). Pour cela, cliquez sur le graphique et dans la partie `filtres` du panel de droite changez la valeur du filtre `Somme de count est supérieure à X`.
+Il sera peut-être nécessaire de changer  les valeurs des filtres ou de le supprimer pour afficher un graphique lisible. Pour cela, cliquez sur le graphique et dans la partie `filtres` du panel de droite changez la valeur du filtre `Somme de count est supérieure à X`.
 
 > ![Etape 2](https://i.imgur.com/IkRU7gQ.png)
