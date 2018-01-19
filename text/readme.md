@@ -26,22 +26,31 @@ Une fois obtenu, j'ai créer mon script de traitement de données. Ce script est
 
 ## Résultats
 
-<style>
-.column{
-  float: left;
-  width: 33%;
-  text-align: left;
-}
-</style>
+Afin d’analyser les résultats trois graphiques ont été générer pour deux artiste différent. 
 
-<div class="column">
-h
-</div>
+### Chansons la plus joués par un artiste
+| Coldplay  |Iron maiden   |
+|---|---|
+|![enter image description here](https://i.imgur.com/PvBPiwf.png)   | ![enter image description here](https://i.imgur.com/inptzQv.png)  |
 
-#
-<div class="column">
-g  
-</div>
+Ces graphiques permettent de répondre à la question principal `Quelles sont les chansons les plus jouées par un groupe ?`. 
+
+### Chansons la plus joués par pays pour un artiste
+| Coldplay  |Iron maiden   |
+|---|---|
+|![enter image description here](https://i.imgur.com/0FTRnAy.png)   | ![enter image description here](https://i.imgur.com/PcRTkp5.png)  |
+
+Ces graphiques permettent de démontrer que dans la majeure partie des cas, la chanson reste identique quelque sois le pays. Ce résultat s'explique simplement par le faite que la chanson la plus joués et celle qui se retrouve dans la majeure partie des pays.
+
+### Chansons la plus joués par année pour un artiste
+| Coldplay  |Iron maiden   |
+|---|---|
+|![enter image description here](https://i.imgur.com/zpfr3IW.png)   | ![enter image description here](https://i.imgur.com/0zswKUm.png)  |
+
+Ce graphique démontre que au fil des années le choix des chansons est influencer par la tendance. Que la sortie d'album ou ancienneté des chansons impacte les chansons choisies pour un concert.
 
 # Conclusion
 
+A la fin de cette analyse, nous pouvons clairement dédire que les chansons les plus joués par un artiste sont forcément les plus vieilles ou les gros succès. En analysant plus en détails les résultats en fonction des pays, nous retrouvons les mêmes résultats que les chansons les plus joués pour la même raison que le premier graphique.
+
+Le plus intéressant est lorsque nous filtrons les chansons par années, ce qui nous permet de voir les changements au fil des années, les baisse de popularité des chansons plus vieilles ou les chansons à succès sorti. 
