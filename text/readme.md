@@ -24,5 +24,24 @@ Afin de traité mes données j'ai dû m'inscrire sur Setlist.fm](https://www.set
 
 Une fois obtenu, j'ai créer mon script de traitement de données. Ce script est réaliser en PHP qui effectue une requête sur [API](https://api.setlist.fm/docs/1.0/index.html) de [Setlist.fm](https://www.setlist.fm/) et génère les fichiers .csv grâce au résultats obtenus.
 
-## Resultats
-## Conclusion
+## Résultats
+
+<style>
+.column{
+  float: left;
+  width: 33%;
+  text-align: left;
+}
+</style>
+
+<div class="column">
+h
+</div>
+
+#
+<div class="column">
+g  
+</div>
+
+# Conclusion
+
